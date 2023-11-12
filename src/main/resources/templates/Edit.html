@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th= "http:/www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+
+    form {
+        text-align:center;
+    }
+    
+    label{
+    color: white;
+    }
+    
+    h1{
+    font-family: Arial;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    }
+    
+    input[type=text]{
+    border: 2px solid #9c7834;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    }
+    
+    botton[type=submit]{
+        background-color: green;
+    }
+    
+    body{
+    background-color: #ffffffbe;
+    background-image: url('/oval.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+    }
+    
+</style>
+<title>Library Management System</title>
+</head>
+<body>
+
+<br>
+<form th:action="@{/books/{id} (id=${book.id})}" th:object="${book}" method="post">
+
+<label>Author</label>
+<br>
+<input
+type="text"
+name="author"
+th:field="*{author}"
+placeholder=""
+/>
+<br>
+<br>
+<label>Publisher</label>
+<br>
+<input
+type="text"
+name="publisher"
+th:field="*{publisher}"
+placeholder=""
+/>
+<br>
+<br>
+<label>ISBN</label>
+<br>
+<input
+type="text"
+name="isbn"
+th:field="*{isbn}"
+placeholder=""
+/>
+<br>
+<br>
+<label>Copies</label>
+<br>
+<input
+type="text"
+name="copies"
+th:field="*{copies}"
+placeholder=""
+/>
+<br>
+<br>
+<label>pages</label>
+<br>
+<input
+type="text"
+name="pages"
+th:field="*{pages}"
+placeholder=""
+/>
+<br>
+
+<br>
+<label>subject</label>
+<br>
+<input
+type="text"
+name="subject"
+th:field="*{subject}"
+placeholder=""
+/>
+<br>
+<br>
+<button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

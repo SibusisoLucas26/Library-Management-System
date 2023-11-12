@@ -1,0 +1,25 @@
+body{
+    background-image: url('/oval.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+	background-color: rgba(71, 66, 66, 0.287);
+	background-blend-mode: darken,screen, difference;
+	position: relative;
+	height: 500px;
+	padding: 15px;
+}
+#edit{
+    background-color: rgb(154, 153, 150);
+    font-family: Arial;
+    color:white;
+    padding: 5px 6px;
+    border-radius: 4px;
+    display: inline;	
+    }
+
+ h1{
+    
+    font-stretch: ultra-condensed;
+    color: rgb(157, 142, 142);	
+         
+    }   

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th= "http:/www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Employees Management System</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Library Book System</h1>
+<br>
+<a th:href="@{/books/new}" id="edit">Add</a>
+<br>
+<br>
+<table id="book" >
+
+<tr>
+<th>Book Id</th>
+<th>Author</th>
+<th>Publisher</th>
+<th>ISBN</th>
+<th>Copies</th>
+<th>Pages</th>
+<th>Subject</th>
+</tr>
+
+<tbody>
+<tr th:each= "book : ${books}">
+
+<td th:text= "${book.id}"></td>
+<td th:text= "${book.author}"></td>
+<td th:text= "${book.publisher}"></td>
+<td th:text= "${book.isbn}"></td>
+<td th:text= "${book.copies}"></td>
+<td th:text= "${book.pages}"></td>
+<td th:text= "${book.subject}"></td>
+<td>
+  <a th:href="@{/book/edit/{id} (id=${book.id})}" id="edit">Edit</a>
+ <!-- <a th:href="@{/book/delete/{id} (id=${book.id})}" id="delete" >Delete</a> -->
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</body>
+</html>

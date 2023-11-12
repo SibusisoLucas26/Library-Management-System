@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(36, 31, 49);
+    
+    background-size: cover;
+	background-attachment: fixed;
+    background-blend-mode: overlay;    
+    }
+    
+    #edit{
+    background-color: rgb(53, 132, 228);
+    font-family: Arial;
+    color:white;
+    padding: 5px 6px;
+    border-radius: 4px;	
+    }
+    #edit tr:hover{
+        background-color:blue;
+    }
+    
+    #delete{
+    background-color: #e01b24;
+    font-family: Arial;
+    color:white;
+    padding: 5px 6px;
+    border-radius: 4px;
+    }
+    #delete tr:hover{
+        background-color:red;
+    }
+    
+    h1{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(88, 89, 5);	
+    font-variant: super;
+    font-weight: unset; 
+      
+    }
+    
+    #book{
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    
+    }
+    
+    #book th, #employee td { 
+    border: 1px solid black;
+    padding: 8px;
+    
+    }
+    
+    #book tr:hover {
+    background-color: #57e389;
+    }
+    
+    #book tr{
+    background-color: rgb(255, 255, 255);	
+    }
+    
+    #book th {
+    background-color: #060606;
+    color: white;
+    }
+
+    #book td {
+        background-color: bisque;
+        color: rgb(27, 24, 22);
+    }
+    
